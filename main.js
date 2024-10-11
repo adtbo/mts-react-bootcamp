@@ -160,5 +160,3 @@ window.onclick = function(event) {
 
 withdrawButton.addEventListener('click', onActionButtonClick(actions.WITHDRAW));
 depositButton.addEventListener('click', onActionButtonClick(actions.DEPOSIT));
-
-
