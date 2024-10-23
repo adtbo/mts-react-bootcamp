@@ -4,8 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ATM Machine Bootcamp</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    
+    <div class="main-container">
+        <h1>ATM Machine</h1>
+        <form id="form-account">
+            <div class="account-number-container">
+                <label for="account-number">Account Number</label>
+                <input
+                    type="text"
+                    class="form-control"
+                    name="account-number"
+                    id="account-number"
+                    placeholder="Input your account number"
+                >
+            </div> 
+        </form>
+        <div class="info-container" id="info-container">
+            <p>Your Balance:&ensp;</p>
+            <p><span id="user-balance">500</span></p>
+        </div>
+        <div class="action-container" id="transaction-action">
+            <button id="withdraw-action">Withdraw</button>
+            <button id="deposit-action">Deposit</button>
+        </div>
+        <form class="input-amount" id="form-amount">
+            <input
+                type="number"
+                class="form-control"
+                name="transaction-amount"
+                id="transaction-amount"
+            >
+            <button type="submit" value="Submit">Submit</button>
+        </form>
+    </div>
+    <div id="alert-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h4>Your Transaction is success</h4>
+        </div>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
